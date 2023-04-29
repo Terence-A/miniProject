@@ -9,17 +9,60 @@
   </head>
   <body>
     <!-- create fixed header with navbar with 4 links, html, css, git, contact(jumps to contact form) -->
-    <header></header>
+    <header class="main-header">
+      <h1>Mini Project</h1>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">GIT</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- create image with caption + (3 cards html, css, git)  -->
-    <img src="#" alt="" />
-    <section class="card" id="html-card"></section>
-    <section class="card" id="css-card"></section>
-    <section class="card" id="git-card"></section>
+    <section id="hero">
+      <img
+        src="./assets/img/code.jpg"
+        alt="picture of keyboard and moniter in background for coding"
+      />
+    </section>
+
+    <main id="main-cards">
+      <section class="card" id="html-card">
+        <h2>HTML</h2>
+        <p>Standard markup language for Web pages.</p>
+      </section>
+      <section class="card" id="css-card">
+        <h2>CSS</h2>
+        <p>Language we use to style an HTML document.</p>
+      </section>
+      <section class="card" id="git-card">
+        <h2>GIT</h2>
+        <p>Version control system</p>
+      </section>
+    </main>
 
     <!-- collect visitor's contact info (form input name and email and send button)-->
+    <section id="contact-info">
+      <form action="#">
+        <label for="userName">Name: </label>
+        <input
+          type="text"
+          id="userName"
+          name="userName"
+          placeholder="Your Name"
+        />
+        <label for="userEmail">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Your Email" />
+        <input type="submit" value="submit" />
+      </form>
+    </section>
 
     <!-- create footer  -->
-    <footer></footer>
+    <footer>
+      <h3>© MiniProject by Terence Arseneault.</h3>
+    </footer>
   </body>
 </html>
